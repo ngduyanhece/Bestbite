@@ -13,12 +13,48 @@ html, body {
   margin: 0 auto;
 }
 h1 {
+  font-size: 3em !important;
+  font-weight: 400;
+  color: #fff !important;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+h2 {
   margin-top: 0;
   padding-left: 20%;
   font-size: 2em;
 }
+h3 {
+  font-size: 1.8em;
+  margin-top: 30px;
+}
+h4 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: rgba(216,25,47,1);
+}
 .col-md-6 {
   margin-top: 20px;
+}
+/*************************************************************
+          Button Style
+*************************************************************/
+.btn {
+  margin-top: 20px;
+  border: none;
+  background-color: rgba(216,25,47,1);
+  color: #fff;
+  font-size: 1.2em;
+}
+.btn:hover {
+  background-color: rgba(255,25,47,1) !important;
+  color: #fff;
+}
+/*************************************************************
+          Header Style
+*************************************************************/
+header {
+  height: 100px;
 }
 /*************************************************************
           Navigation Style
@@ -29,11 +65,88 @@ h1 {
   width: 100px;
   text-align: center;
 }
+.nav-pills li {
+  margin-right: 10px;
+}
 .nav-pills li.active a,
 .nav-pills li.active a:hover,
 .nav-pills li a:hover,
-.section .btn:hover {
+.btn:hover {
   background-color: rgba(216,25,47,1);
   box-shadow: 0 2px 4px rgba(0,0,0,.5);
   color: #fff;
+}
+/*************************************************************
+          Jumbotron Style
+*************************************************************/
+.jumbotron {
+  height: 400px;
+  padding-left: 15%;
+  padding-top: 10%;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+}
+/*************************************************************
+          Banner Style
+*************************************************************/
+.banner {
+  height: 180px;
+  text-align: center;
+  background-color: #36343f;
+  color: #fff
+}
+/*************************************************************
+          Features section Style
+*************************************************************/
+.features {
+  margin-bottom: 20px;
+}
+.features h3{
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+}
+.features .col-md-4 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/*************************************************************
+          Features section Style
+*************************************************************/
+footer {
+  height: 150px;
+  background-color: #eee;
+  padding-top: 40px;
+}
+footer p {
+  font-size: 0.8em;
+  padding-left: 20%;
+}  
+.site-link p {
+  color: rgba(216,25,47,1);
+}
+/*************************************************************
+          Responsive Style
+*************************************************************/
+@media (max-width: 985px) {
+  h2 {
+    text-align: center;
+    padding: 0;
+    margin-top: -15px;
+  }
+  .nav {
+    float: none;
+    margin-left: 25%;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 599px) {
+  .nav-pills li a {
+    width: 70px;
+    font-size: 0.6em;
+  }
 }
